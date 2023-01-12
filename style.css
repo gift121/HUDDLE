@@ -1,7 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&family=Poppins:wght@600&display=swap');
 *{
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif;
 }
 body{
     width: 100%;   
@@ -9,7 +12,7 @@ body{
 .wrapper{
   background: url("img/bg-hero-desktop.svg");
   background-size: cover;
-  background-color:  rgba(197, 215, 221, 0.8);
+  background-color:  hsl(193, 100%, 96%);
   width: 100%;
   
 }
@@ -33,6 +36,7 @@ body{
   padding: 15px;
   width: 20%;
   margin-top: 20px;
+  font-weight: 700;
   
 }
 header{
@@ -42,14 +46,18 @@ header{
 }
 .one h1{
   margin-left: 50px;
-  max-width: 250px;
+  max-width: 300px;
   font-size: 24px;
   color: hsl(192, 100%,9%);
+  font-family: 'Poppins', sans-serif;
+  font-weight: 600;
+
 }
 .one p, .on{
   margin-top: 16px;
   margin-left: 50px;
-  max-width: 70%
+  max-width: 70%;
+  font-weight: 400;
 }
 .on{
   background-color: hsl(322, 100%, 60%);
@@ -200,7 +208,8 @@ header{
     .cont, ul, li{
     flex-basis: 25%; 
     padding: 10px;
-    
+    list-style: none;
+
     }
     .logo{
     color: white;
@@ -211,6 +220,7 @@ header{
       flex-direction: row;
       flex-basis: 25%;
       padding: 10px;
+      justify-content: space-between;
       cursor: pointer;
       animation: moving 2s linear infinite;
     }
@@ -225,12 +235,15 @@ header{
    .navLinks a{
        color: white;
        cursor: pointer;
+       text-decoration: none;
    }
    .navlink a{
         display: flex;
         flex-direction: row;
         padding: 10px;
+        color: hsl(193, 100%, 96%);
         cursor: pointer;
+        text-decoration: none;
    }
    
    i{
@@ -293,7 +306,7 @@ header{
       margin-bottom: 2em;
    }
    .on{
-      padding: 5px;
+      padding: 0.5em;
       display: block;
       width: 100%;
       margin-bottom: 2em;
@@ -318,11 +331,7 @@ header{
     } 
     
 }
-@media screen and (max-width: 490px){
-  header .one p{
-    width: 100%;
-    max-width: 300%;
-  }
-  
-} 
+
+   
+
    
