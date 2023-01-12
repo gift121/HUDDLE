@@ -16,11 +16,13 @@ body{
 .fnav{
   display: flex;
   justify-content: space-between;
+  padding: 1em;
   color: hsl(192, 100%, 9%);
   align-items: center;
 }
 .fnav img{
   margin-top: 20px;
+  width: 150px;
 }
 .try{
   margin-right: 10%;
@@ -29,7 +31,7 @@ body{
   border: none;
   border-radius: 20px;
   padding: 15px;
-  width: 200px;
+  width: 20%;
   margin-top: 20px;
   
 }
@@ -39,13 +41,15 @@ header{
   padding: 15px;
 }
 .one h1{
-   margin-left: 50px;
-   width: 100%;
-   color: hsl(192, 100%,9%);
+  margin-left: 50px;
+  max-width: 250px;
+  font-size: 24px;
+  color: hsl(192, 100%,9%);
 }
 .one p, .on{
   margin-top: 16px;
   margin-left: 50px;
+  max-width: 70%
 }
 .on{
   background-color: hsl(322, 100%, 60%);
@@ -251,51 +255,74 @@ header{
 
    }
    /* media responsiveness */
-
-   @media screen and (max-width: 600px) and (min-width: 300px){
+   @media screen and (max-width: 490px){
+     .boxOne header .one p{
+      max-width: 80%;
+      text-align: center;
+      letter-spacing: 1;
+      margin-bottom: 2em;
+   }
+  } 
+  @media screen and (max-width: 600px){
+    .fnav{
+      padding: 8px;
+    }
+    .fnav img{
+      width: 100px;
+    }
+    .fnav .try{
+      width: 40%;
+    }
+    header{
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+    }
+    header .one{
+      text-align: center;
+    }
+    header .one h1{
+      width: 100%;
+      max-width: 80%;
+    }
+    header .one p{
+      max-width: 400px;
+      width: 100%;
+      text-align: center;
+      letter-spacing: 1;
+      margin-bottom: 2em;
+   }
+   .on{
+      padding: 5px;
+      display: block;
+      width: 100%;
+      margin-bottom: 2em;
+   }
     .boxTwo{
-      display: flex;
       flex-direction: column;
       text-align: center;
       box-shadow: 1px 0px 10px 0px gray;
     }
-    .boxThree{
-      display: flex;
+    .boxThree, .boxFour{
       flex-direction: column;
       text-align: center;
       
     }
-    .boxThree{
-      display: flex;
-      flex-direction: column;
-      text-align:center;
-      
-    }
-    .boxFour{
-      display: flex;
-       flex-direction: column;
-      text-align: center;
-      
-   }
-   .foot .row{
-    margin-bottom: -50px;
-    z-index: '1';
-    position: relative;
-    margin-top: 10px;
-    border-radius: 5px;
-    width: 80%;
-  } 
-  header{
-     display: flex;
-     flex-direction: column;
-   }
-   .on{
-     padding: 10px;
-     justify-content: center; 
-     align-items: center;
-   }
-   h1{
-     width: 80%;
-   }
+    .foot .row{
+      margin-bottom: -50px;
+      z-index: '1';
+      position: relative;
+      margin-top: 10px;
+      border-radius: 5px;
+      width: 80%;
+    } 
+    
 }
+@media screen and (max-width: 490px){
+  header .one p{
+    width: 100%;
+    max-width: 300%;
+  }
+  
+} 
    
