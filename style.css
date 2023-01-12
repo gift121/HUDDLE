@@ -29,8 +29,8 @@ body{
 }
 .try{
   margin-right: 10%;
-  background-color: white;
-  box-shadow: 1px 0px 20px 0px wheat;
+  background-color: hsl(0, 0%, 98%);
+  box-shadow: 1px 1px 1px 0.1px gray;
   border: none;
   border-radius: 20px;
   padding: 15px;
@@ -192,8 +192,10 @@ header{
     border: 1px solid hsl(322, 100%, 60%);
     padding: 10px;
     margin-left: 40px;
-    box-shadow: 1px 0px 20px 0px hsl(322, 100%, 60%);
-   
+    box-shadow: 1px 0px 20px 0px hsl(193, 100%, 96%);
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
 
   }
   .container{
@@ -212,8 +214,8 @@ header{
 
     }
     .logo{
-    color: white;
-    background-color: white; 
+    filter: white;
+    width: 150px
     }
     .navs a{
       display: flex;
